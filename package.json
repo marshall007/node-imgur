@@ -1,20 +1,23 @@
 {
   "name": "node-imgur",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Marshall Cottrell <marshall007@mac.com> (http://github.com/marshall007)",
   "description": "A CLI tool and wrapper for the imgur API.",
   "bin": {
-    "imgur": "./bin/imgur.js"
+    "imgur": "./bin/cli.js"
   },
-  "main": "./bin/imgur.js",
-  "repository" : {
-    "type" : "git",
-    "url" : "git://github.com/marshall007/node-imgur.git"
+  "main": "./lib/imgur.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marshall007/node-imgur.git"
   },
   "keywords": [
     "imgur",
     "image",
     "sharing",
     "upload"
-  ]
+  ],
+  "dependencies": {
+    "request": "~2.10.0"
+  }
 }
