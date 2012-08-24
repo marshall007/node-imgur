@@ -1,6 +1,6 @@
 {
   "name": "node-imgur",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Marshall Cottrell <marshall007@mac.com> (http://github.com/marshall007)",
   "description": "A CLI tool and wrapper for the imgur API.",
   "bin": {
