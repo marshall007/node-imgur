@@ -1,4 +1,4 @@
-#! /usr/local/bin/node
+#!/usr/bin/env node
 
 var imgur = require('../lib/imgur').createClient('f29daac16ef710bba20406c80c23c9cf');
 var util = require('../lib/util');
@@ -25,10 +25,10 @@ var options = docopt(doc, { version: imgur.version });
 
 if (options['<image>'].length > 0) {
 
-  for (i in options['<image>']) {
+  for (var i in options['<image>']) {
     imgur.upload(options['<image>'][i], handleUpload);
   }
-  
+
 }
 
 function awaitUser(callback) {
@@ -53,5 +53,5 @@ function handleUpload(e, response) {
   } else {
     util.copy(response.upload.links.original);
     util.println('Imgur link copied to clipboard! ');
-  } 
+  }
 }
